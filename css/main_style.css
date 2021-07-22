@@ -1,0 +1,583 @@
+@charset "utf-8";
+
+#wrap {
+    width: 100%;
+    min-width: 1280px;
+}
+
+.inner {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+header nav .main_meun{
+    text-align: center;
+}
+
+
+header nav .main_meun>li {
+    float: left;
+    line-height: 30px;
+    width: 120px;
+    cursor: pointer;
+    font-weight:400;
+}
+
+header nav .main_meun>li:hover .sub_meun {
+    display: block;
+}
+
+header .sub_meun {
+    display: none;
+    position: absolute;
+    z-index: 10000;
+}
+
+header .sub_meun li a {
+    display: block;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #fff;
+    font-weight: 100;
+    text-align: center;
+}
+
+header .sub_meun li a:hover {
+    background-color: rgb(168, 168, 168);
+    color: #fff;
+}
+
+
+header .logo {
+    text-align: center;
+    padding-top: 15px;
+}
+
+
+header .header_top {
+    border-bottom: 1.5px solid rgb(224, 224, 224);
+}
+
+
+header .icon {
+    float: right;
+    width: 25px;
+    margin: 3px 0px;
+    cursor: pointer;
+}
+
+header .icon img {
+    width: 100%;
+}
+
+header .header_top ul li {
+    width: 25px;
+    float: left;
+    margin-left: 10px;
+}
+
+header .header_top ul li img {
+    width: 100%;
+}
+
+header .header_top ul {
+    float: right;
+    margin-bottom: 5px;
+}
+
+
+/*---------section1----------*/
+
+
+#section1 .slide {
+    width: 100%;
+    position: relative;
+}
+
+#section1 .slide .topban {
+    position: absolute;
+    top: 0;
+}
+
+#section1 .slide .topban img {
+    width: 100%;
+}
+
+#section1 .slide input {
+    display: none;
+}
+
+#section1 .slide .page {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 100000;
+    top: 94%;
+}
+
+#section1 .slide .page label {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(134, 134, 134);
+    display: inline-block;
+    transition: all .7s;
+    cursor: pointer;
+}
+
+#section1 .slide input[id=underbar1]:checked~.page label[for=underbar1],
+#section1 .slide input[id=underbar2]:checked~.page label[for=underbar2],
+#section1 .slide input[id=underbar3]:checked~.page label[for=underbar3] {
+    background-color: #fff;
+    width: 80px;
+    border-radius: 20px;
+}
+
+#section1 .slide .banner {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#section1 .slide .topban {
+    width: 100%;
+    transition: 2s;
+}
+
+#section1 .slide .block {
+    width: 100%;
+    transition: 2s;
+    position: relative;
+}
+
+#section1 .slide .block img{
+    visibility: hidden;
+}
+
+
+#section1 .slide input[id=underbar1]:checked~.banner .banner1 {
+    opacity: 1;
+}
+
+#section1 .slide input[id=underbar1]:checked~.banner .banner2,
+#section1 .slide input[id=underbar1]:checked~.banner .banner3 {
+    opacity: 0;
+}
+
+#section1 .slide input[id=underbar2]:checked~.banner .banner2 {
+    opacity: 1;
+}
+
+#section1 .slide input[id=underbar2]:checked~.banner .banner1,
+#section1 .slide input[id=underbar2]:checked~.banner .banner3 {
+    opacity: 0;
+}
+
+#section1 .slide input[id=underbar3]:checked~.banner .banner3 {
+    opacity: 1;
+}
+
+#section1 .slide input[id=underbar3]:checked~.banner .banner1,
+#section1 .slide input[id=underbar3]:checked~.banner .banner2 {
+    opacity: 0;
+}
+
+
+
+#section1 .banner1 h2 {
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    line-height: 40px;
+    font-weight: 100;
+    position: absolute;
+    top: 20%;
+}
+
+#section1 .banner .banner1 p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 100;
+    position: absolute;
+    top: 40%;
+}
+
+#section1 .banner1 .but {
+    background-color: rgba(128, 128, 128, 0.2);
+    color: #fff;
+    float: left;
+    padding: 8px 20px;
+    font-weight: 100;
+    position: absolute;
+    top: 80%;
+}
+
+#section1 .banner2 h2 {
+    color: #fff;
+    font-size: 45px;
+    line-height: 40px;
+    font-weight: 100;
+    position: absolute;
+    top: 37%;
+    left: 50%;
+}
+
+
+#section1 .banner2 p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 100;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+}
+
+#section1 .banner2 .but {
+    background-color: rgba(128, 128, 128, 0.2);
+    color: #fff;
+    float: left;
+    padding: 8px 20px;
+    font-weight: 100;
+    position: absolute;
+    top: 80%;
+    left: 70%;
+}
+
+#section1 .banner3 h2 {
+    color: rgb(97, 97, 97);
+    font-size: 45px;
+    line-height: 40px;
+    font-weight: 100;
+    position: absolute;
+    top: 37%;
+    left: 55%;
+}
+
+
+#section1 .banner3 p {
+    color: rgb(97, 97, 97);
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 100;
+    position: absolute;
+    top: 47%;
+    left: 55%;
+}
+
+#section1 .banner3 .but {
+    background-color: rgba(128, 128, 128, 0.2);
+    color: #fff;
+    float: left;
+    padding: 8px 20px;
+    font-weight: 100;
+    position: absolute;
+    top: 80%;
+    left: 70%;
+}
+
+
+
+
+/*arrow*/
+
+.arrow {
+    position: absolute;
+    top: 46%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.arrow .control {
+    display: none;
+}
+
+#section1 .slide .arrow .left {
+    width: 30px;
+    height: 30px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    position: absolute;
+    display: block;
+    left: 20px;
+    transform: rotate(-45deg);
+    cursor: pointer;
+}
+
+#section1 .slide .arrow .right {
+    width: 30px;
+    height: 30px;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    position: absolute;
+    display: block;
+    right: 20px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+#section1 .slide input[id=underbar1]:checked~.arrow .control1,
+#section1 .slide input[id=underbar2]:checked~.arrow .control2,
+#section1 .slide input[id=underbar3]:checked~.arrow .control3 {
+    display: block;
+}
+
+
+/*----------section2----------*/
+
+.section2 {
+    text-align: center;
+}
+
+.section2 h2 {
+    font-size: 30px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.section2 ul li {
+    float: left;
+    margin-right: 20px;
+    position: relative;
+}
+
+
+.section2 ul .last {
+    margin-right: 0px;
+}
+
+.section2 p {
+    text-align: left;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 100px;
+    font-weight: 400;
+}
+
+.section2 ul li .black {
+    background: black;
+    width: 100%;
+    height: 503px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.section2 ul li:hover .black {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.section2 ul li .black p {
+    color: #FFF;
+    font-size: 20px;
+    margin-top: 465px;
+    margin-left: 10px;
+}
+
+
+/*----------section3----------*/
+
+
+
+.section3 .inner {
+    text-align: center;
+}
+
+.section3 h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.section3 .section3_bg {
+    background-image: url(../images/section2.png);
+    width: 100%;
+    height: 440px;
+    margin-bottom: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section3 .but {
+    background-color: rgba(128, 128, 128, 0.4);
+    color: #fff;
+    float: right;
+    padding: 8px 25px;
+    margin-top: 340px;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+
+
+/*----------section4----------*/
+
+
+
+.section4 .inner {
+    text-align: center;
+}
+
+.section4 h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.section4 ul li {
+    float: left;
+    position: relative;
+}
+
+.section4 ul .margin {
+    margin-right: 20px;
+}
+
+.section4 p {
+    text-align: left;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.section4 ul li .black2 {
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 633px;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.section4 ul li:hover .black2 {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.section4 ul li .black2 p {
+    color: #fff;
+    margin-top: 590px;
+    margin-left: 10px;
+}
+
+
+
+/*----------footer----------*/
+
+
+
+footer {
+    margin-top: 100px;
+    background-color: rgb(163, 163, 163);
+    text-align: center;
+    height: 220px;
+}
+
+footer .icon {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 18px;
+    height: 50px;
+    margin-left: 80px;
+}
+
+footer .icon li {
+    float: left;
+    margin-right: 50px;
+    width: 40px;
+}
+
+footer .icon li img {
+    width: 100%;
+}
+
+footer .text {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+footer .text li {
+    float: left;
+    margin-right: 35px;
+}
+
+footer p {
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+
+
+/*----------aside----------*/
+
+.topbtn {
+    position: fixed;
+    bottom: 8%;
+    left: 96%;
+}
+
+aside input {
+    display: none;
+}
+
+aside input[id=btn]:checked~ .popup {
+    visibility: hidden;
+}
+
+aside .popup {
+    width: 400px;
+    height: 250px;
+    border-radius: 30px;
+    background-color: rgb(236, 236, 236);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #333;
+    text-align: center;
+    font-size: 17px;
+    visibility: visible;
+    z-index: 1000000;
+}
+
+aside .pop_p1 {
+    line-height: 30px;
+    font-weight: 300;
+    color: rgb(18, 38, 54);
+    margin-top: 70px;
+    margin-bottom: 50px;
+    font-size: 17px;
+}
+
+aside .popup span {
+    cursor: pointer;
+}
+
+aside .popup_back {
+    position: fixed;
+    background-color: rgba(49, 49, 49, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    visibility: visible;
+}
+
+aside input[id=btn]:checked~ .popup_back {
+    visibility: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}

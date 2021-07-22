@@ -1,0 +1,277 @@
+@charset "utf-8";
+
+#wrap {
+    width: 100%;
+    min-width: 1280px;
+}
+
+.inner {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+
+/*--------header--------*/
+
+header nav .main_meun {
+    text-align: center;
+}
+
+
+header nav .main_meun>li {
+    float: left;
+    line-height: 30px;
+    width: 120px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+header nav .main_meun>li:hover .sub_meun {
+    display: block;
+}
+
+header .sub_meun {
+    display: none;
+    position: absolute;
+    z-index: 10000;
+}
+
+header .sub_meun li a {
+    display: block;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #fff;
+    font-weight: 100;
+    text-align: center;
+}
+
+header .sub_meun li a:hover {
+    background-color: rgb(168, 168, 168);
+    color: #fff;
+}
+
+
+header .logo {
+    text-align: center;
+    padding-top: 15px;
+}
+
+
+header .header_top {
+    border-bottom: 1.5px solid rgb(224, 224, 224);
+}
+
+
+header .icon {
+    float: right;
+    width: 25px;
+    margin: 3px 0px;
+    cursor: pointer;
+}
+
+header .icon img {
+    width: 100%;
+}
+
+header .header_top ul li {
+    width: 25px;
+    float: left;
+    margin-left: 10px;
+}
+
+header .header_top ul li img {
+    width: 100%;
+}
+
+header .header_top ul {
+    float: right;
+    margin-bottom: 5px;
+}
+
+
+/*----------section1----------*/
+
+
+.section1 {
+    background-image: url(../images/top.png);
+    margin-bottom: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 544px;
+}
+
+.section2 {
+    text-align: center;
+}
+
+.section2 h2 {
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.section2 ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+.section2 ul .last {
+    margin-right: 0;
+}
+
+
+.section2 ul p {
+    text-align: left;
+}
+
+.section2 ul .p1 {
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+
+.section2 ul .p2 {
+    margin-top: 10px;
+}
+
+
+/*----------color----------*/
+
+.section2 ul .color_last .color_chip {
+    width: 400px;
+    height: 461px;
+    position: relative;
+    overflow: hidden;
+}
+
+.section2 ul .color_last .color_chip input {
+    display: none;
+}
+
+.section2 ul .color_last .color_chip .page {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    text-align: right;
+    width: 100%;
+}
+
+.section2 ul .color_last .color_chip .page label.black {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    transition: all 0.1s;
+}
+
+.section2 ul .color_last .color_chip .page label.red {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(161, 0, 0);
+    transition: all 0.1s;
+}
+
+.section2 ul .color_last .color_chip .page label.blue {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    transition: all 0.1s;
+}
+
+
+.section2 ul .color_chip input[id=color1]:checked~.page label[for=color1],
+.section2 ul .color_chip input[id=color2]:checked~.page label[for=color2],
+.section2 ul .color_chip input[id=color3]:checked~.page label[for=color3] {
+    border: 2px solid gray;
+}
+
+
+.section2 ul .color_last .color_chip .color_img {
+    position: absolute;
+    width: 300%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+}
+
+.section2 ul .color_last .color_chip .color_img .tab_img {
+    width: calc(100% / 3);
+    float: left;
+}
+
+
+.section2 ul .color_chip input[id=color1]:checked~.color_img {
+    left: 0;
+}
+
+.section2 ul .color_chip input[id=color2]:checked~.color_img {
+    left: -100%;
+}
+
+.section2 ul .color_chip input[id=color3]:checked~.color_img {
+    left: -200%;
+}
+
+
+
+
+
+
+
+
+/*----------footer----------*/
+
+
+footer {
+    margin-top: 100px;
+    background-color: rgb(163, 163, 163);
+    text-align: center;
+    height: 220px;
+}
+
+footer .icon {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 18px;
+    height: 50px;
+}
+
+
+footer .icon li {
+    float: left;
+    margin-right: 50px;
+    width: 40px;
+}
+
+footer .icon li img {
+    width: 100%;
+}
+
+footer .text {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: 400;
+    margin-top: 100px;
+}
+
+footer .text li {
+    float: left;
+    margin-right: 35px;
+}
+
+footer p {
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.topbtn {
+    position: fixed;
+    bottom: 8%;
+    left: 96%;
+}
